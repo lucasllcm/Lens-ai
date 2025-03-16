@@ -15,29 +15,29 @@ import { ReText } from 'react-native-redash';
 
 const content = [
   {
-    title: "Let's create.",
+    title: "Vamos criar.",
     bg: Colors.lime,
-    fontColor: Colors.pink,
+    fontColor: Colors.blue,
   },
   {
-    title: "Let's brainstorm.",
+    title: "Vamos debater.",
     bg: Colors.brown,
     fontColor: Colors.sky,
   },
   {
-    title: "Let's discover.",
+    title: "Vamos descobrir.",
     bg: Colors.orange,
     fontColor: Colors.blue,
   },
   {
-    title: "Let's go.",
+    title: "Vamos Nessa.",
     bg: Colors.teal,
     fontColor: Colors.yellow,
   },
   {
-    title: 'ChatGPT.',
+    title: 'Lens-AI.',
     bg: Colors.green,
-    fontColor: Colors.pink,
+    fontColor: Colors.blue,
   },
 ];
 
@@ -200,6 +200,7 @@ const styles = StyleSheet.create({
   mask: {
     zIndex: 1,
     position: 'absolute',
+    top: 11,
     left: '0%',
     height: 44,
   },
@@ -211,6 +212,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     position: 'absolute',
     left: '0%',
+    top: 14,
   },
   titleText: {
     flexDirection: 'row',
@@ -220,9 +222,107 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     left: '0%',
     position: 'absolute',
+    top: 0,
   },
   content: {
     marginTop: 300,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 export default memo(AnimatedIntro);
+
+
+
+/*
+
+    Explicação do código:
+
+  Importações:
+
+import Colors from '@/constants/Colors';: Importa um arquivo de constantes chamado Colors, que provavelmente contém definições de cores usadas no aplicativo.
+
+import { memo } from 'react';: Importa a função memo do React, que é usada para otimizar o desempenho do componente, evitando renderizações desnecessárias.
+
+import { StyleSheet, useWindowDimensions } from 'react-native';: Importa StyleSheet para criar estilos e useWindowDimensions para obter as dimensões da tela do dispositivo.
+
+import Animated, { ... } from 'react-native-reanimated';: Importa o módulo Animated e várias funções relacionadas a animações, como interpolate, interpolateColor, useAnimatedStyle, etc.
+
+import { ReText } from 'react-native-redash';: Importa o componente ReText, que permite animar textos.
+
+  Definição do conteúdo:
+
+content: É um array de objetos que define o conteúdo a ser exibido. Cada objeto contém:
+
+title: O texto a ser mostrado.
+
+bg: A cor de fundo.
+
+fontColor: A cor do texto.
+
+  Componente AnimatedIntro:
+
+const { width } = useWindowDimensions();: Obtém a largura da tela do dispositivo.
+
+const ballWidth = 34;: Define a largura de uma "bola" que será usada na animação.
+
+const half = width / 2 - ballWidth / 2;: Calcula a posição central da tela, ajustada para o tamanho da bola.
+
+  Valores compartilhados e reativos
+
+useSharedValue: Cria valores que podem ser animados e compartilhados entre diferentes partes do código.
+
+currentX: Armazena a posição horizontal da bola.
+
+currentIndex: Armazena o índice atual do conteúdo sendo exibido.
+
+isAtStart: Indica se a animação está no início.
+
+labelWidth: Armazena a largura do texto.
+
+canGoToNext: Controla se a animação pode avançar para o próximo item.
+
+didPlay: Indica se a animação já foi executada.
+
+   Lógica de animação
+
+useDerivedValue: Cria um valor derivado que é atualizado automaticamente quando currentIndex muda.
+
+Se isAtStart for false, calcula o próximo índice (currentIndex + 1).
+
+Usa o operador % para garantir que o índice permaneça dentro dos limites do array content.
+
+  Estilos animados
+
+useAnimatedStyle: Cria um estilo que pode ser animado.
+
+interpolateColor: Interpola entre duas cores com base no valor de currentX.
+
+interpolate: Interpola valores para animar a posição do texto.
+
+  Reações animadas
+
+useAnimatedReaction: Executa uma função sempre que labelWidth muda.
+
+withDelay: Atraso antes de iniciar a animação.
+
+withTiming: Animação suave para mover currentX para uma nova posição.
+
+  Renderização
+
+Animated.View: Componente que suporta animações.
+
+ReText: Componente para animar textos.
+
+onLayout: Captura a largura do texto e atualiza labelWidth.
+
+  Estilos
+
+Define os estilos para os componentes.
+
+  Exportação
+
+memo: Otimiza o componente para evitar renderizações desnecessárias.
+
+
+*/

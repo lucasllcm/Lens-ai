@@ -16,28 +16,28 @@ import { ReText } from 'react-native-redash';
 const content = [
   {
     title: "Vamos criar.",
-    bg: Colors.lime,
-    fontColor: Colors.blue,
+    bg: Colors.azulnoturno,
+    fontColor: Colors.brancogelo,
   },
   {
     title: "Vamos debater.",
-    bg: Colors.brown,
-    fontColor: Colors.sky,
+    bg: Colors.roxoelétrico,
+    fontColor: Colors.amareloluminoso,
   },
   {
     title: "Vamos descobrir.",
-    bg: Colors.orange,
-    fontColor: Colors.blue,
+    bg: Colors.cianoneon,
+    fontColor: Colors.cianoclaro,
   },
   {
     title: "Vamos Nessa.",
-    bg: Colors.teal,
-    fontColor: Colors.yellow,
+    bg: Colors.laranjasolar,
+    fontColor: Colors.lilássuave,
   },
   {
     title: 'Lens-AI.',
-    bg: Colors.green,
-    fontColor: Colors.blue,
+    bg: Colors.blue,
+    fontColor: Colors.cinzaclaro,
   },
 ];
 

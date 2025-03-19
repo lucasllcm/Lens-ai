@@ -1,50 +1,32 @@
-# Welcome to your Expo app 👋
+# 🌟 Lens-AI - Inteligência Visual Aprimorada  
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Lens-AI Logo](https://your-logo-url.com)  
 
-## Get started
+🚀 **Lens-AI** é um aplicativo de **visão computacional** que utiliza **inteligência artificial** para reconhecer e interpretar objetos, textos e códigos visuais. Inspirado no **Google Lens** e **GPT-4o Plus**, ele oferece funcionalidades inovadoras para consumidores e estudantes.  
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📌 Funcionalidades  
 
-2. Start the app
+✅ **Captura e análise de imagens** - Reconheça objetos, textos e produtos rapidamente.  
+✅ **Comparação de preços** - Veja preços e histórico de valores de produtos.  
+✅ **Histórico de consultas** - Acesse pesquisas anteriores facilmente.  
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📦 Tecnologias Utilizadas  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🔹 **Frontend:** React Native + Expo  
+🔹 **Backend:** Node.js 
+🔹 **Banco de Dados:** *** 
+🔹 **Inteligência Artificial:** Ollama
+🔹 **Autenticação:** ***
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🚀 Como Instalar e Rodar o Projeto  
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### **Pré-requisitos**  
+Antes de começar, certifique-se de ter instalado:  
+- [Node.js](https://nodejs.org/)  
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)  

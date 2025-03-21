@@ -1,5 +1,5 @@
 import{ Ionicons } from '@expo/vector-icons';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, Pressable, Platform } from 'react-native';
 import { Stack, useRouter  } from "expo-router";
 
 export default function RootLayout() {
@@ -16,12 +16,9 @@ export default function RootLayout() {
         name="login" 
         options={{
         presentation: 'modal',
+        headerShown: false,
+        animation: Platform.OS === 'ios' ? 'default' : 'slide_from_bottom',
         title: '',
-        headerLeft: () => (
-          <TouchableOpacity onPress={() => router.back()}>
-            <Ionicons name="close-outline" size={28} />
-          </TouchableOpacity>
-        ),
       }}
       />
     </Stack>);

@@ -1,6 +1,6 @@
 import Colors from '@/constants/Colors';
 import { defaultStyles } from '@/constants/Styles';
-import { useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { 
     View, 
@@ -14,6 +14,8 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
+import { Ionicons } from '@expo/vector-icons';
+
 const Page = () => {
     const { type } = useLocalSearchParams<{ type: string }>();  
     const [loading, setLoading] = useState(false);
@@ -23,11 +25,21 @@ const Page = () => {
     const onSignUpPress = async () => {}
     const onSigInPress = async () => {}
 
+    const router = useRouter();
+
   return (
     <KeyboardAvoidingView 
         behavior={Platform.OS == 'ios' ? 'padding' : 'height'}
         keyboardVerticalOffset={70}
         style={[styles.container]}>
+
+        <View style={{ flex: 0, padding: 0 }}>
+          <TouchableOpacity onPress={() => router.back()}>
+            <Ionicons name="close-outline" size={28} />
+          </TouchableOpacity>
+          {/* Resto da tela de login */}
+        </View>
+
         {loading && (
             <View style={defaultStyles.loadingOverlay}>
                 <ActivityIndicator size="large" color="#fff" />

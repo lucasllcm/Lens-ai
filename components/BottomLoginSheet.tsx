@@ -33,7 +33,6 @@ const BottomLoginSheet = () => {
         </TouchableOpacity>
       </Link>
     </View>
-
   );
 };
 

@@ -1,6 +1,6 @@
 # 🌟 Lens-AI - Inteligência Visual Aprimorada  
 
-![Lens-AI Logo](assets\images\logo-white.png)  
+![Lens-AI Logo](assets/images/logo-white.png)  
 
 🚀 **Lens-AI** é um aplicativo de **visão computacional** que utiliza **inteligência artificial** para reconhecer e interpretar objetos, textos e códigos visuais. Inspirado no **Google Lens** e **GPT-4o Plus**, ele oferece funcionalidades inovadoras para consumidores e estudantes.  
 
